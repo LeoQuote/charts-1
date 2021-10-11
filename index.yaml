@@ -1,14 +1,94 @@
 apiVersion: v1
 entries:
-  nginx:
+  helpdesk:
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2021-10-11T09:38:10.775232057Z"
+    description: A Helm chart for Douban Helpdesk
+    digest: fce3a08410ff4af9399bc78375b344b8ce1a1026991bf60d52a1a1ff796e53d3
+    home: https://github.com/douban/helpdesk
+    keywords:
+    - douban
+    - helpdesk
+    - self-service
+    - stackstorm
+    - airflow
+    - spincyle
+    maintainers:
+    - email: sysadmin@douban.com
+      name: douban
+    - name: everpcpc
+    - name: LeoQuote
+    name: helpdesk
+    sources:
+    - https://github.com/douban/helpdesk
+    type: application
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/helpdesk-0.2.1/helpdesk-0.2.1.tgz
+    version: 0.2.1
+  karma:
+  - apiVersion: v2
+    appVersion: "0.85"
+    created: "2021-10-11T09:38:10.933252353Z"
+    description: A Helm chart for Karma - an UI for Prometheus Alertmanager
+    digest: 5fbaa25ef9c46cb15360b693c3ddd3069cc4a4185e694830a467cf1cf22dab75
+    home: https://github.com/prymitive/karma
+    maintainers:
+    - email: cdesaintmartin@wiremind.io
+      name: desaintmartin
+    - email: amrini@wiremind.io
+      name: machine424
+    - email: fminaud@wiremind.io
+      name: francoisminaud
+    name: karma
+    sources:
+    - https://github.com/wiremind/wiremind-helm-charts/tree/main/charts/karma
+    - https://github.com/prymitive/karma
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/karma-1.8.1/karma-1.8.1.tgz
+    version: 1.8.1
+  mergeable:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-07-02T05:39:24.556897877Z"
+    created: "2021-10-11T09:38:11.106168333Z"
     description: A Helm chart for Kubernetes
-    digest: dc2afa65ddaeac6c7b5d0c8554cf641c3a5267343b85a34284c350a7abde177e
+    digest: d0da9c2eb09e1f0c84ea279bd5e6e21fdffdfb6f8afe1260f15463651c9ef086
+    home: https://github.com/mergeability/mergeable
+    maintainers:
+    - name: LeoQuote
+    name: mergeable
+    type: application
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/mergeable-0.1.0/mergeable-0.1.0.tgz
+    version: 0.1.0
+  nginx:
+  - apiVersion: v2
+    appVersion: 0.16.0
+    created: "2021-10-11T09:38:11.275076221Z"
+    description: A Helm chart for Kubernetes
+    digest: e5507162828917a7dcccb9224481e08453b8e34be7949ba1515ae58b2e316be8
+    home: https://nginx.org/
+    maintainers:
+    - name: douban
     name: nginx
     type: application
     urls:
-    - https://github.com/douban/charts/releases/download/nginx-0.1.0/nginx-0.1.0.tgz
+    - https://github.com/LeoQuote/charts-1/releases/download/nginx-0.1.2/nginx-0.1.2.tgz
+    version: 0.1.2
+  overlord:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-10-11T09:38:11.426119109Z"
+    description: A Helm chart for Kubernetes
+    digest: bda5a141ef16e3b781751b1263db02f5f06263aa8d329231d494ea7c485c3dbc
+    home: https://github.com/bilibili/overlord
+    maintainers:
+    - email: sysadmin@douban.com
+      name: douban
+    - name: everpcpc
+    name: overlord
+    type: application
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/overlord-0.1.0/overlord-0.1.0.tgz
     version: 0.1.0
-generated: "2020-07-02T05:39:24.419745404Z"
+generated: "2021-10-11T09:38:10.487659636Z"
