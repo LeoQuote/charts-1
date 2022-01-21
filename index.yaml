@@ -1,11 +1,25 @@
 apiVersion: v1
 entries:
+  channels:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-01-21T08:26:17.025354276Z"
+    description: A Helm chart for Kubernetes
+    digest: 2b7561553cde7a4326a102c82b7f968b422ffd6825b5444545fb202b29547cd4
+    home: https://github.com/everpcpc/channels
+    maintainers:
+    - name: LeoQuote
+    name: channels
+    type: application
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/channels-1.1.0/channels-1.1.0.tgz
+    version: 1.1.0
   helpdesk:
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2021-10-11T09:38:10.775232057Z"
+    created: "2022-01-21T08:26:17.227564487Z"
     description: A Helm chart for Douban Helpdesk
-    digest: fce3a08410ff4af9399bc78375b344b8ce1a1026991bf60d52a1a1ff796e53d3
+    digest: e25d4c93b7e54a635ebd04a7157525061bfd7fd76f2e6ea43f01db7827d2407d
     home: https://github.com/douban/helpdesk
     keywords:
     - douban
@@ -24,14 +38,14 @@ entries:
     - https://github.com/douban/helpdesk
     type: application
     urls:
-    - https://github.com/LeoQuote/charts-1/releases/download/helpdesk-0.2.1/helpdesk-0.2.1.tgz
-    version: 0.2.1
+    - https://github.com/LeoQuote/charts-1/releases/download/helpdesk-0.3.1/helpdesk-0.3.1.tgz
+    version: 0.3.1
   karma:
   - apiVersion: v2
     appVersion: "0.85"
-    created: "2021-10-11T09:38:10.933252353Z"
+    created: "2022-01-21T08:26:17.441170993Z"
     description: A Helm chart for Karma - an UI for Prometheus Alertmanager
-    digest: 5fbaa25ef9c46cb15360b693c3ddd3069cc4a4185e694830a467cf1cf22dab75
+    digest: 817e11e9c9b1bb2db8a773da9f858a20eec59508998a40c7f93827adee755ee5
     home: https://github.com/prymitive/karma
     maintainers:
     - email: cdesaintmartin@wiremind.io
@@ -45,42 +59,42 @@ entries:
     - https://github.com/wiremind/wiremind-helm-charts/tree/main/charts/karma
     - https://github.com/prymitive/karma
     urls:
-    - https://github.com/LeoQuote/charts-1/releases/download/karma-1.8.1/karma-1.8.1.tgz
-    version: 1.8.1
+    - https://github.com/LeoQuote/charts-1/releases/download/karma-1.9.0/karma-1.9.0.tgz
+    version: 1.9.0
   mergeable:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-10-11T09:38:11.106168333Z"
+    created: "2022-01-21T08:26:17.620955514Z"
     description: A Helm chart for Kubernetes
-    digest: d0da9c2eb09e1f0c84ea279bd5e6e21fdffdfb6f8afe1260f15463651c9ef086
+    digest: 766fc42816e3c58e88b4c22d263a797c684c3ecb8d7b2c20816ec9e859d9a742
     home: https://github.com/mergeability/mergeable
     maintainers:
     - name: LeoQuote
     name: mergeable
     type: application
     urls:
-    - https://github.com/LeoQuote/charts-1/releases/download/mergeable-0.1.0/mergeable-0.1.0.tgz
-    version: 0.1.0
+    - https://github.com/LeoQuote/charts-1/releases/download/mergeable-0.2.0/mergeable-0.2.0.tgz
+    version: 0.2.0
   nginx:
   - apiVersion: v2
-    appVersion: 0.16.0
-    created: "2021-10-11T09:38:11.275076221Z"
+    appVersion: 1.16.0
+    created: "2022-01-21T08:26:17.822210225Z"
     description: A Helm chart for Kubernetes
-    digest: e5507162828917a7dcccb9224481e08453b8e34be7949ba1515ae58b2e316be8
+    digest: a791e8c085bc0fe8db3cc8a2187f4a0385f8812eb5b68b564d76b64505413b3a
     home: https://nginx.org/
     maintainers:
     - name: douban
     name: nginx
     type: application
     urls:
-    - https://github.com/LeoQuote/charts-1/releases/download/nginx-0.1.2/nginx-0.1.2.tgz
-    version: 0.1.2
+    - https://github.com/LeoQuote/charts-1/releases/download/nginx-0.2.0/nginx-0.2.0.tgz
+    version: 0.2.0
   overlord:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-10-11T09:38:11.426119109Z"
+    created: "2022-01-21T08:26:17.997102949Z"
     description: A Helm chart for Kubernetes
-    digest: bda5a141ef16e3b781751b1263db02f5f06263aa8d329231d494ea7c485c3dbc
+    digest: d39d8bba81226a33488ef24595e2846acb49b67e122f57bfc5ee8403ffc491a2
     home: https://github.com/bilibili/overlord
     maintainers:
     - email: sysadmin@douban.com
@@ -89,6 +103,82 @@ entries:
     name: overlord
     type: application
     urls:
-    - https://github.com/LeoQuote/charts-1/releases/download/overlord-0.1.0/overlord-0.1.0.tgz
+    - https://github.com/LeoQuote/charts-1/releases/download/overlord-0.2.0/overlord-0.2.0.tgz
+    version: 0.2.0
+  probot:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-01-21T08:26:18.208514456Z"
+    description: A Helm chart for Kubernetes
+    digest: 85e06e19ad553c5abeb4964fcd39fe8479628ed77a9f054635bc5f50257158ce
+    home: https://github.com/douban/charts
+    maintainers:
+    - name: LeoQuote
+    name: probot
+    type: application
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/probot-0.1.0/probot-0.1.0.tgz
     version: 0.1.0
-generated: "2021-10-11T09:38:10.487659636Z"
+  prometheus-beanstalkd-exporter:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-01-21T08:26:18.42583456Z"
+    description: A Helm chart for Kubernetes
+    digest: b48d028392dc1e7d7a3f861704ad3d904290e4bd8c8e37c96cfc42b5edbe5f60
+    home: https://github.com/messagebird/beanstalkd_exporter
+    maintainers:
+    - name: LeoQuote
+    name: prometheus-beanstalkd-exporter
+    type: application
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/prometheus-beanstalkd-exporter-0.1.0/prometheus-beanstalkd-exporter-0.1.0.tgz
+    version: 0.1.0
+  prometheus-memcached-exporter:
+  - apiVersion: v2
+    appVersion: 0.9.0
+    created: "2022-01-21T08:26:18.600935883Z"
+    description: A Helm chart for Kubernetes
+    digest: e5b3ffa8a7f9e0517822251640b1649636befbaa92f6a9e6ae22f46d43080089
+    home: https://github.com/prometheus/memcached_exporter
+    maintainers:
+    - name: LeoQuote
+    name: prometheus-memcached-exporter
+    type: application
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/prometheus-memcached-exporter-0.1.0/prometheus-memcached-exporter-0.1.0.tgz
+    version: 0.1.0
+  selenium:
+  - apiVersion: v2
+    appVersion: 3.141.59
+    created: "2022-01-21T08:26:18.796259797Z"
+    description: Chart for selenium grid
+    digest: af4c24ff191e6a16abbfa2bca3e21a5bfb0acdacfcc84b3c8e1a1be0d9d4a650
+    home: http://www.seleniumhq.org/
+    icon: http://docs.seleniumhq.org/images/big-logo.png
+    keywords:
+    - qa
+    maintainers:
+    - name: LeoQuote
+    name: selenium
+    sources:
+    - https://github.com/SeleniumHQ/docker-selenium
+    - https://github.com/douban/charts
+    type: application
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/selenium-1.3.0/selenium-1.3.0.tgz
+    version: 1.3.0
+  tinyproxy-exporter:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-01-21T08:26:18.992019611Z"
+    description: A Helm chart for Kubernetes
+    digest: 9ebb9a0c6c6d4eb4c07a2ab57d57c86d338f1480ab83afee00a71d22e09738e6
+    home: https://github.com/igzivkov/tinyproxy_exporter
+    maintainers:
+    - name: LeoQuote
+    name: tinyproxy-exporter
+    type: application
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/tinyproxy-exporter-0.1.0/tinyproxy-exporter-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-01-21T08:26:16.796469276Z"
