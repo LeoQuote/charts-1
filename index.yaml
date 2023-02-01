@@ -1,50 +1,115 @@
 apiVersion: v1
 entries:
-  prometheus-memcached-exporter:
+  aliyun-exporter:
   - apiVersion: v2
-    appVersion: 0.9.0
-    created: "2022-05-27T05:44:20.437215977Z"
+    appVersion: 1.16.0
+    created: "2023-02-01T07:51:24.473670481Z"
     description: A Helm chart for Kubernetes
-    digest: 31469c82f2e0522d5b9aabccaf3f35aaaf25a99deec8250cc8bfb7d80a2285d5
-    home: https://github.com/douban/charts
-    keywords:
-    - prometheus
-    - memcached
+    digest: 1874c67c3905d6ab24811114e00786235ae88fcbe8880c637d6d25f0bf51aad0
+    home: https://github.com/douban/aliyun-exporter
     maintainers:
-    - name: LeoQuote
-    name: prometheus-memcached-exporter
-    sources:
-    - https://github.com/prometheus/memcached_exporter
+    - name: douban
+    name: aliyun-exporter
     type: application
     urls:
-    - https://github.com/LeoQuote/charts-1/releases/download/prometheus-memcached-exporter-0.1.1/prometheus-memcached-exporter-0.1.1.tgz
-    version: 0.1.1
-  tencentcloud-exporter:
-  - apiVersion: v2
-    appVersion: v2.8.0
-    created: "2022-05-27T05:44:20.607534525Z"
-    description: A Helm chart for Kubernetes
-    digest: a10150780daba718063138de5bf82a14d7a5eb703c8c665e3d372f151ae58fb9
-    home: https://github.com/tencentyun/tencentcloud-exporter
-    maintainers:
-    - name: LeoQuote
-    name: tencentcloud-exporter
-    type: application
-    urls:
-    - https://github.com/LeoQuote/charts-1/releases/download/tencentcloud-exporter-0.1.0/tencentcloud-exporter-0.1.0.tgz
+    - https://github.com/LeoQuote/charts-1/releases/download/aliyun-exporter-0.1.0/aliyun-exporter-0.1.0.tgz
     version: 0.1.0
-  tencentcloud-info-exporter:
+  archery:
   - apiVersion: v2
-    appVersion: v2.8.0
-    created: "2022-05-27T05:44:20.775390762Z"
+    created: "2023-02-01T07:51:24.692698074Z"
+    dependencies:
+    - condition: redis.embedded
+      name: redis
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: ~15.7.1
+    - condition: mysql.embedded
+      name: mysql
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: ~8.8.20
+    - condition: goinception.embedded
+      name: goinception
+      repository: https://douban.github.io/charts/
+      version: ~0.2.0
+    description: Archery Helm chart for Kubernetes
+    digest: f713262b7d4be71703ef8c3bc18f3c1b4985757df48dc890770ae7ffbb5cf9ef
+    home: https://archerydms.com/
+    maintainers:
+    - name: AceAttorney
+    - name: LeoQuote
+    name: archery
+    sources:
+    - https://github.com/hhyo/Archery
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/archery-0.3.0/archery-0.3.0.tgz
+    version: 0.3.0
+  goinception:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2023-02-01T07:51:24.901307325Z"
     description: A Helm chart for Kubernetes
-    digest: 6e65adc823dbfc562d5d9e4cf249f0c64a0f7f0219976b4d91504f6bd3e8c64d
-    home: https://github.com/LeoQuote/tencentcloud-info-exporter
+    digest: 26175691af0021795f73d84d2fb033d13c242cae2a57cb42a9e7cfd4a352674d
+    home: https://github.com/hanchuanchuan/goInception
     maintainers:
     - name: LeoQuote
-    name: tencentcloud-info-exporter
+    - name: AceAttorney
+    name: goinception
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/goinception-0.2.0/goinception-0.2.0.tgz
+    version: 0.2.0
+  qiniu-exporter:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-02-01T07:51:25.09961614Z"
+    description: A Helm chart for Kubernetes
+    digest: 2d0844a9c5adffbb8038811fced7deea7953a8db5c6d31118895ff0443d98985
+    home: https://github.com/douban/qiniu-exporter
+    maintainers:
+    - name: douban
+    name: qiniu-exporter
     type: application
     urls:
-    - https://github.com/LeoQuote/charts-1/releases/download/tencentcloud-info-exporter-0.1.2/tencentcloud-info-exporter-0.1.2.tgz
-    version: 0.1.2
-generated: "2022-05-27T05:44:20.098798291Z"
+    - https://github.com/LeoQuote/charts-1/releases/download/qiniu-exporter-0.1.0/qiniu-exporter-0.1.0.tgz
+    version: 0.1.0
+  redirect:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-02-01T07:51:35.310230398Z"
+    description: Using ingress to redirect
+    digest: 90eb4489cb8db17d2418bf4661a7c1045cb5145246eb0ec8e2a75fa2681bfa1f
+    home: https://github.com/douban/charts
+    maintainers:
+    - name: LeoQuote
+    name: redirect
+    type: application
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/redirect-0.2.0/redirect-0.2.0.tgz
+    version: 0.2.0
+  ucloud-exporter:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-02-01T07:51:35.501959669Z"
+    description: A Helm chart for Kubernetes
+    digest: cb706e0a62e02bf3e5c651159d99ce970e487dfc2379a6966f8febefe41bae6f
+    home: https://github.com/douban/ucloud-exporter
+    maintainers:
+    - name: douban
+    name: ucloud-exporter
+    type: application
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/ucloud-exporter-0.1.1/ucloud-exporter-0.1.1.tgz
+    version: 0.1.1
+  upyun-exporter:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-02-01T07:51:35.690858191Z"
+    description: A Helm chart for Kubernetes
+    digest: 08909eca74544d7e84e2877d6c362a7c1ddab4166f781d4dfbe9ae0d1c7ab1fc
+    home: https://github.com/douban/upyun-exporter
+    maintainers:
+    - name: douban
+    name: upyun-exporter
+    type: application
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/upyun-exporter-0.1.0/upyun-exporter-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-02-01T07:51:24.215615558Z"
