@@ -1,115 +1,39 @@
 apiVersion: v1
 entries:
-  aliyun-exporter:
+  healthchecks:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-02-01T07:51:24.473670481Z"
-    description: A Helm chart for Kubernetes
-    digest: 1874c67c3905d6ab24811114e00786235ae88fcbe8880c637d6d25f0bf51aad0
-    home: https://github.com/douban/aliyun-exporter
-    maintainers:
-    - name: douban
-    name: aliyun-exporter
-    type: application
-    urls:
-    - https://github.com/LeoQuote/charts-1/releases/download/aliyun-exporter-0.1.0/aliyun-exporter-0.1.0.tgz
-    version: 0.1.0
-  archery:
-  - apiVersion: v2
-    created: "2023-02-01T07:51:24.692698074Z"
+    created: "2023-05-08T10:32:13.820539344Z"
     dependencies:
-    - condition: redis.embedded
-      name: redis
+    - condition: postgresql.enabled,global.postgresql.enabled
+      name: postgresql
       repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
-      version: ~15.7.1
-    - condition: mysql.embedded
-      name: mysql
-      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
-      version: ~8.8.20
-    - condition: goinception.embedded
-      name: goinception
-      repository: https://douban.github.io/charts/
-      version: ~0.2.0
-    description: Archery Helm chart for Kubernetes
-    digest: f713262b7d4be71703ef8c3bc18f3c1b4985757df48dc890770ae7ffbb5cf9ef
-    home: https://archerydms.com/
+      version: 10.14.3
+    description: A Helm chart for Kubernetes
+    digest: 1bed45b1e0d4bfab427b13d6f91c1328dd337609b46d1b91edb20b8c0b5141ca
     maintainers:
-    - name: AceAttorney
-    - name: LeoQuote
-    name: archery
+    - email: rakshit@improwised.com
+      name: rakshit
+    name: healthchecks
     sources:
-    - https://github.com/hhyo/Archery
+    - https://github.com/healthchecks/healthchecks
+    type: application
     urls:
-    - https://github.com/LeoQuote/charts-1/releases/download/archery-0.3.0/archery-0.3.0.tgz
-    version: 0.3.0
-  goinception:
-  - apiVersion: v2
-    appVersion: "1.0"
-    created: "2023-02-01T07:51:24.901307325Z"
-    description: A Helm chart for Kubernetes
-    digest: 26175691af0021795f73d84d2fb033d13c242cae2a57cb42a9e7cfd4a352674d
-    home: https://github.com/hanchuanchuan/goInception
-    maintainers:
-    - name: LeoQuote
-    - name: AceAttorney
-    name: goinception
-    urls:
-    - https://github.com/LeoQuote/charts-1/releases/download/goinception-0.2.0/goinception-0.2.0.tgz
-    version: 0.2.0
-  qiniu-exporter:
+    - https://github.com/LeoQuote/charts-1/releases/download/healthchecks-1.0.6/healthchecks-1.0.6.tgz
+    version: 1.0.6
+  pint:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-02-01T07:51:25.09961614Z"
+    created: "2023-05-08T10:32:13.96797054Z"
     description: A Helm chart for Kubernetes
-    digest: 2d0844a9c5adffbb8038811fced7deea7953a8db5c6d31118895ff0443d98985
-    home: https://github.com/douban/qiniu-exporter
+    digest: d891863c54c21f896ba3752e12668aff39bad981784531f23c2a58d0edc08817
     maintainers:
     - name: douban
-    name: qiniu-exporter
+    name: pint
+    sources:
+    - https://github.com/cloudflare/pint
     type: application
     urls:
-    - https://github.com/LeoQuote/charts-1/releases/download/qiniu-exporter-0.1.0/qiniu-exporter-0.1.0.tgz
-    version: 0.1.0
-  redirect:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2023-02-01T07:51:35.310230398Z"
-    description: Using ingress to redirect
-    digest: 90eb4489cb8db17d2418bf4661a7c1045cb5145246eb0ec8e2a75fa2681bfa1f
-    home: https://github.com/douban/charts
-    maintainers:
-    - name: LeoQuote
-    name: redirect
-    type: application
-    urls:
-    - https://github.com/LeoQuote/charts-1/releases/download/redirect-0.2.0/redirect-0.2.0.tgz
-    version: 0.2.0
-  ucloud-exporter:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2023-02-01T07:51:35.501959669Z"
-    description: A Helm chart for Kubernetes
-    digest: cb706e0a62e02bf3e5c651159d99ce970e487dfc2379a6966f8febefe41bae6f
-    home: https://github.com/douban/ucloud-exporter
-    maintainers:
-    - name: douban
-    name: ucloud-exporter
-    type: application
-    urls:
-    - https://github.com/LeoQuote/charts-1/releases/download/ucloud-exporter-0.1.1/ucloud-exporter-0.1.1.tgz
+    - https://github.com/LeoQuote/charts-1/releases/download/pint-0.1.1/pint-0.1.1.tgz
     version: 0.1.1
-  upyun-exporter:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2023-02-01T07:51:35.690858191Z"
-    description: A Helm chart for Kubernetes
-    digest: 08909eca74544d7e84e2877d6c362a7c1ddab4166f781d4dfbe9ae0d1c7ab1fc
-    home: https://github.com/douban/upyun-exporter
-    maintainers:
-    - name: douban
-    name: upyun-exporter
-    type: application
-    urls:
-    - https://github.com/LeoQuote/charts-1/releases/download/upyun-exporter-0.1.0/upyun-exporter-0.1.0.tgz
-    version: 0.1.0
-generated: "2023-02-01T07:51:24.215615558Z"
+generated: "2023-05-08T10:32:13.581631227Z"
