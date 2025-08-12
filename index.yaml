@@ -1,19 +1,246 @@
 apiVersion: v1
 entries:
+  archery:
+  - apiVersion: v2
+    created: "2025-08-12T09:28:16.471509659Z"
+    dependencies:
+    - condition: redis.embedded
+      name: redis
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: ~15.7.1
+    - condition: mysql.embedded
+      name: mysql
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: ~8.8.20
+    - condition: goinception.embedded
+      name: goinception
+      repository: https://douban.github.io/charts/
+      version: ~0.3.1
+    description: Archery Helm chart for Kubernetes
+    digest: e27bbab80f8bb31ca16baf52435c8b997ca129218d53e908a463e27c20ade103
+    home: https://archerydms.com/
+    maintainers:
+    - name: AceAttorney
+    - name: LeoQuote
+    name: archery
+    sources:
+    - https://github.com/hhyo/Archery
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/archery-0.4.0/archery-0.4.0.tgz
+    version: 0.4.0
+  cbs-csi-driver:
+  - apiVersion: v2
+    appVersion: 2.3.3
+    created: "2025-08-12T09:28:16.649606343Z"
+    description: A Helm chart for Kubernetes
+    digest: a8a930fd3346eab823d7311f4da87009f96c7579687991e5c42a4ddcb769ea0c
+    maintainers:
+    - name: DDDFiish
+    name: cbs-csi-driver
+    type: application
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/cbs-csi-driver-0.1.1/cbs-csi-driver-0.1.1.tgz
+    version: 0.1.1
+  clb-controller-manager:
+  - apiVersion: v2
+    appVersion: v1.30.1-v2.4
+    created: "2025-08-12T09:28:16.788561538Z"
+    description: A Helm chart for managing Tencent Cloud CLB.
+    digest: 84aa04a0b33792369078243491d928267b44f68b25d1db572ed5043264fa4a84
+    maintainers:
+    - name: DDDFiish
+    name: clb-controller-manager
+    type: application
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/clb-controller-manager-0.1.1/clb-controller-manager-0.1.1.tgz
+    version: 0.1.1
+  codecov:
+  - apiVersion: v2
+    appVersion: 24.4.1
+    created: "2025-08-12T09:28:16.972029306Z"
+    dependencies:
+    - condition: redis.embedded
+      name: redis
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: ~17.15.6
+    - condition: postgresql.embedded
+      name: postgresql
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: ~12.8.5
+    - alias: timescaledb
+      condition: timescaledb.enabled
+      name: timescaledb-single
+      repository: https://charts.timescale.com/
+      version: 0.33.*
+    - condition: minio.embedded
+      name: minio
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: ~12.7.0
+    description: A Helm chart for Kubernetes
+    digest: 6a1a0227dd9d3ba53c7ddc0ee69f433ab9598dca3ed94577ec3574a3887c92b3
+    home: https://github.com/codecov/self-hosted
+    maintainers:
+    - name: douban
+    name: codecov
+    type: application
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/codecov-0.2.1/codecov-0.2.1.tgz
+    version: 0.2.1
+  coredns:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: fixed
+          description: improve default readiness probe config for shutdown
+    apiVersion: v2
+    appVersion: 1.12.0
+    created: "2025-08-12T09:28:17.087351789Z"
+    description: CoreDNS is a DNS server that chains plugins and provides Kubernetes
+      DNS Services
+    digest: 4138024ae64ed484d0ae8b1ab7cb0d2c9d2133ca3e039c2cb7e5d1282130ba45
+    home: https://coredns.io
+    icon: https://coredns.io/images/CoreDNS_Colour_Horizontal.png
+    keywords:
+    - coredns
+    - dns
+    - kubedns
+    maintainers:
+    - name: mrueg
+    - name: haad
+    - name: hagaibarel
+    - name: shubham-cmyk
+    name: coredns
+    sources:
+    - https://github.com/coredns/coredns
+    type: application
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/coredns-1.39.2/coredns-1.39.2.tgz
+    version: 1.39.2
+  dify:
+  - apiVersion: v2
+    appVersion: 1.7.0
+    created: "2025-08-12T09:28:17.263166367Z"
+    dependencies:
+    - condition: redis.embedded
+      name: redis
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: ~19.1.1
+    - condition: postgresql.embedded
+      name: postgresql
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: ~15.2.5
+    - condition: minio.embedded
+      name: minio
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: ~14.1.7
+    description: A Helm chart for Dify
+    digest: 61d908cd8a3cbab999bfc72ce7642f72fce17eb4d1623cda0c39f951bbedd14b
+    home: https://github.com/langgenius/dify
+    maintainers:
+    - name: douban
+    name: dify
+    type: application
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/dify-0.6.6/dify-0.6.6.tgz
+    version: 0.6.6
   gatekeeper:
   - apiVersion: v2
-    appVersion: v3.12.0
-    created: "2023-05-08T11:02:50.731969448Z"
+    appVersion: v3.17.1
+    created: "2025-08-12T09:28:17.382935477Z"
     description: A Helm chart for Gatekeeper
-    digest: ceeace605150a8c2f941c6bc7ca134516082cf7cff17280148883b434b2e8d6b
+    digest: 2c43731911df55f72551c86a05e7f545039f06a764fe4169beae51b3a28163a9
     home: https://github.com/open-policy-agent/gatekeeper
     icon: https://open-policy-agent.github.io/gatekeeper/website/img/logo.svg
     keywords:
     - open policy agent
+    maintainers:
+    - name: LeoQuote
     name: gatekeeper
     sources:
     - https://github.com/open-policy-agent/gatekeeper.git
     urls:
-    - https://github.com/LeoQuote/charts-1/releases/download/gatekeeper-3.12.0/gatekeeper-3.12.0.tgz
-    version: 3.12.0
-generated: "2023-05-08T11:02:50.454978275Z"
+    - https://github.com/LeoQuote/charts-1/releases/download/gatekeeper-3.17.1/gatekeeper-3.17.1.tgz
+    version: 3.17.1
+  goinception:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2025-08-12T09:28:17.545890156Z"
+    description: 一个集审核、执行、备份及生成回滚语句于一身的MySQL运维工具
+    digest: 60d91a515c235f7289819e02cf677f222ee337aef3134639fa0a7fbe487a32ea
+    home: https://github.com/hanchuanchuan/goInception
+    maintainers:
+    - name: LeoQuote
+    - name: AceAttorney
+    name: goinception
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/goinception-0.3.1/goinception-0.3.1.tgz
+    version: 0.3.1
+  k8s-cron:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-08-12T09:28:17.725329283Z"
+    description: A Helm chart to install cronjob on k8s cluster
+    digest: b57f1d5f717d10775f13a15521379961501664faf8031fc141932560c266f411
+    home: https://github.com/alpine-docker/k8s
+    maintainers:
+    - name: douban
+    name: k8s-cron
+    type: application
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/k8s-cron-0.1.0/k8s-cron-0.1.0.tgz
+    version: 0.1.0
+  kafka-ui:
+  - apiVersion: v2
+    appVersion: v1.2.0
+    created: "2025-08-12T09:28:17.859883171Z"
+    description: A Helm chart for kafka-UI
+    digest: 97449a87ae86c5e9ce4fdda08bf651891682cf8229402b28f20dc12d3bbe4158
+    icon: https://raw.githubusercontent.com/kafbat/kafka-ui/main/documentation/images/logo_new.png
+    maintainers:
+    - name: DDDFiish
+    name: kafka-ui
+    type: application
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/kafka-ui-1.5.0/kafka-ui-1.5.0.tgz
+    version: 1.5.0
+  nonebot:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-08-12T09:28:18.001536411Z"
+    description: A Helm chart for Kubernetes
+    digest: a9ef7aff0b66a3922d0d208785ff4d20bdf954e7d2a286172d915c200f321803
+    maintainers:
+    - name: douban
+    name: nonebot
+    type: application
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/nonebot-0.1.1/nonebot-0.1.1.tgz
+    version: 0.1.1
+  tencentcloud-exporter:
+  - apiVersion: v2
+    appVersion: v2.8.0
+    created: "2025-08-12T09:28:18.133845416Z"
+    description: A Helm chart for Kubernetes
+    digest: d5e0d023a7af163a1af7abc22c8cff083822dadb472b572ee7cd3abf7df3ecaf
+    home: https://github.com/douban/tencentcloud-exporter
+    maintainers:
+    - name: LeoQuote
+    name: tencentcloud-exporter
+    type: application
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/tencentcloud-exporter-0.2.0/tencentcloud-exporter-0.2.0.tgz
+    version: 0.2.0
+  tencentcloud-info-exporter:
+  - apiVersion: v2
+    appVersion: v2.8.0
+    created: "2025-08-12T09:28:18.261483556Z"
+    description: A Helm chart for Kubernetes
+    digest: d18b0d0e8cb222e269e2c45877c741174b8390b3a536d132d3573484d583b999
+    home: https://github.com/LeoQuote/tencentcloud-info-exporter
+    maintainers:
+    - name: LeoQuote
+    name: tencentcloud-info-exporter
+    type: application
+    urls:
+    - https://github.com/LeoQuote/charts-1/releases/download/tencentcloud-info-exporter-0.2.0/tencentcloud-info-exporter-0.2.0.tgz
+    version: 0.2.0
+generated: "2025-08-12T09:28:16.290752403Z"
